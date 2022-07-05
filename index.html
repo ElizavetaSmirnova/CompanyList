@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        SPA приложение "Список компаний"  
+    </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="field">
+    <div class="field-size modal modal-login">
+        <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off" class="size">
+            <div>
+                <label>наименование</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                <input type="text" name="fullName" id="fullName">
+            </div>
+            <div>
+                <label>адрес</label>
+                <input type="text" name="address" id="address">
+            </div>
+            <div>
+                <label>огрн</label>
+                <input type="text" name="ogrn" id="ogrn">
+            </div>
+            <div>
+                <label>инн</label>
+                <input type="text" name="inn" id="inn">
+            </div>
+            <div>
+                <label>дата регистрации</label><br>
+                <input type="text" name="registration" id="registration">
+            </div>
+            <div  class="form-action-buttons">
+                <input type="submit"  value="Добавить">
+            </div>
+            <button class="modal-close">pfrhsnm</button>
+        </form>
+    </div>
+    <ul class="choose_edit">
+        <li class="color login-link"><a href="#">Добавить</a></li>
+        <!--<li class="color login-link"><a href="#">Редактировать</a></li>-->
+    </ul>
+   
+    <table class="list" id="employeeList">
+        <thead>
+            <tr>
+                <th>наименование</th>
+                <th>адрес</th>
+                <th>огрн</th>
+                <th>инн</th>
+               <th>дата регистрации</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>           
+</div>
+    <script src="script.js"></script>
+    <script src="js.js"></script>
+</body>
+
+</html>
